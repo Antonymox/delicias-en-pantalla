@@ -1,6 +1,7 @@
 
 import { Utensils, Bell, ChefHat } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -71,10 +72,11 @@ const Footer = () => {
               Reserva tu mesa y vive una experiencia gastronómica inolvidable
             </p>
             <Button 
+              asChild
               variant="secondary" 
               className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90"
             >
-              Hacer Reservación
+              <Link to="/reservaciones">Hacer Reservación</Link>
             </Button>
             <p className="text-sm text-primary-foreground/60 mt-2">
               También disponible por WhatsApp
